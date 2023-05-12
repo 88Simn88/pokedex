@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 300px;
     border-radius: 0.8em;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 0.5em solid rgba(208, 177, 238, 0.705);
     margin-left: auto;
     margin-right: auto;

@@ -17,9 +17,9 @@ const Pokedex = () => {
       <header className='header'>
       <img className='banner1' src="../img/image 11.png" alt="" />
         <div className='halfHeader'>
-          
+          <div className='logo1__container'>
             <img className='pokeLogo1' src="../img/poke.png" alt="" />
-          
+          </div>
         </div>
       </header>
         

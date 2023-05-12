@@ -28,7 +28,7 @@ const FormPoke = ( {setFormUrl, urlBase}) => {
     }
 
   return (
-    <div>
+    
        <div className='formContainer'>
         <form onSubmit={handleSubmit}>
             <input placeholder='Search a pokemon' className='inputSearch' ref={inputPoke} type="text" />
@@ -47,7 +47,7 @@ const FormPoke = ( {setFormUrl, urlBase}) => {
             }
         </select>
         </div>
-        </div>
+        
   )
 }
 

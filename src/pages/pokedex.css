@@ -1,5 +1,9 @@
 
 
+.pokedex__main {
+    width: 100vw;
+}
+
 /* -----------------------Header-------------------------- */
 
 .header {
@@ -12,27 +16,33 @@
 .halfHeader {
     background-color: #DD1A1A;
     height: 65%;
+    position: relative;
 }
+
+.logo1__container{
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    bottom: -48px;
+}
+
+.pokeLogo1 {
+    display:block;
+    height: 100%;
+    object-fit: contain;
+       
+}
+
 
 .banner1 {
     width: 200px;
     position: absolute;
     bottom: 28px;
     margin-left: 2em;
+    z-index: 10;
 }
 
 
-
-.pokeLogo1 {
-    display:block;
-    height: 60px;
-    object-fit: contain;
-    position: absolute;
-    bottom: -13px;
-    right: -130px;
-    
-    
-}
 
 /* ----------------text -------------------- */
 
@@ -44,6 +54,7 @@
 
 .welcome__p {
     margin-left: 2em;
+    margin-right: 2em;
     margin-bottom: 1.5em;
 }
 
@@ -51,7 +62,9 @@
 @media (min-width: 700px) {
 
 /* --------------------------------header-------------------------------- */
-
+    .pokedex__main{
+        width: 100vw;
+    }
 
     .banner1 {
         width: 400px;
@@ -60,14 +73,27 @@
         margin-left: 5em;
     }
 
-    .pokeLogo1 {
-        display:block;
-        height: 95px;
-        object-fit: contain;
-        position: absolute;
-        bottom: -30px;
-        right: -500px;
+    .halfHeader {
+        background-color: #DD1A1A;
+        height: 65%;
+        position: relative;
     }
+    
+    .logo1__container{
+        height: 90px;
+        position: absolute;
+        right: 120px;
+        bottom: -60px;
+    }
+    
+    .pokeLogo1 {
+        
+        height: 100%;
+        object-fit: contain;
+           
+    }
+
+  
 
 /* ------------text------------- */
 
