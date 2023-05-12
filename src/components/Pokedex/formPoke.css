@@ -1,0 +1,50 @@
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.selectPoke {
+    
+    padding: 0.5rem;
+    padding: 0.5rem 5.9rem 0.5rem 5.9rem;
+    
+}
+
+.btnSearch {
+    background-color: #D93F3F;
+    border: none;
+    padding: 0.62rem 2rem 0.62rem 2rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btnSearch:hover {
+    transform: scale(1.1);
+}
+
+.inputSearch {
+    padding: 0.5rem;
+    
+}
+
+@media (min-width: 700px) {
+    .formContainer {
+        display: flex;
+        flex-direction: row;
+        margin-left: 5em;
+        gap: 2em;
+    }
+
+    .inputSearch {
+        padding: 0.5rem;
+        width: 300px;
+    }
+
+    
+}

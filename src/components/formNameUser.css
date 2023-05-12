@@ -1,0 +1,26 @@
+.pokeBtn {
+    background-color: #D93F3F;
+    border: none;
+    padding: 0.62rem 2rem 0.62rem 2rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pokeBtn:hover {
+    transform: scale(1.1);
+}
+
+.pokeInput {
+    padding: 0.5rem;
+    
+}
+
+@media (min-width: 700px) {
+   .pokeInput {
+    width: 250px;
+   }
+}
+
+

@@ -1,0 +1,78 @@
+
+
+/* -----------------------Header-------------------------- */
+
+.header {
+    position: relative;
+    background-color: black;
+    height: 100px;
+    margin-bottom: 2em;
+}
+
+.halfHeader {
+    background-color: #DD1A1A;
+    height: 65%;
+}
+
+.banner1 {
+    width: 200px;
+    position: absolute;
+    bottom: 28px;
+    margin-left: 2em;
+}
+
+
+
+.pokeLogo1 {
+    display:block;
+    height: 60px;
+    object-fit: contain;
+    position: absolute;
+    bottom: -13px;
+    right: -130px;
+    
+    
+}
+
+/* ----------------text -------------------- */
+
+.welcome {
+    color: #da0f0f;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.welcome__p {
+    margin-left: 2em;
+    margin-bottom: 1.5em;
+}
+
+
+@media (min-width: 700px) {
+
+/* --------------------------------header-------------------------------- */
+
+
+    .banner1 {
+        width: 400px;
+        position: absolute;
+        bottom: 20px;
+        margin-left: 5em;
+    }
+
+    .pokeLogo1 {
+        display:block;
+        height: 95px;
+        object-fit: contain;
+        position: absolute;
+        bottom: -30px;
+        right: -500px;
+    }
+
+/* ------------text------------- */
+
+    .welcome__p {
+        margin-left: 5em;
+    }
+
+}
