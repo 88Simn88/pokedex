@@ -4,6 +4,7 @@ import './home.css'
 
 const Home = () => {
   return (
+    
     <div className='pokeHome'>
       <img className='banner' src="../img/image 11.png" alt="" />
       <h2 className='title'>Hi Trainer!</h2>
@@ -17,6 +18,7 @@ const Home = () => {
         </div>
       </footer>
     </div>
+    
   )
 }
 

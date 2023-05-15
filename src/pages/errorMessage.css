@@ -1,0 +1,51 @@
+
+.error__title, .error__subtitle {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.error__subtitle{
+    margin-top: 1em;
+}
+
+.error__imgContainer{
+    width: 90%;
+   margin: 1rem auto;
+    
+}
+
+.name__pokeUser {
+    color: #D93F3F;
+}
+
+.backPokedex__btn {
+margin-left: 1.5em;
+background-color: #D93F3F;
+border: none;
+padding: 0.62rem 2rem 0.62rem 2rem;
+color: white;
+font-weight: 600;
+cursor: pointer;
+transition: transform 0.2s;
+
+}
+
+
+
+@media (min-width: 700px){
+    .error__imgContainer {
+        max-width: 400px;
+    }
+    .error__title, .error__subtitle{
+        text-align: center;
+    }
+
+    .backPokedex__btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .backPokedex__btn:hover {
+        transform: scale(1.1);
+        }
+}

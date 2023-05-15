@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux'
 import FormPoke from '../components/Pokedex/FormPoke'
 import PokeContainer from '../components/Pokedex/PokeContainer'
 import './pokedex.css'
+import Header from '../components/Header'
+import Loader from './Loader'
 
 const Pokedex = () => {
 
@@ -10,23 +12,20 @@ const Pokedex = () => {
 
   const [formUrl, setFormUrl] = useState(urlBase)
 
-    const {trainerName} = useSelector(state => state)
+  const { trainerName } = useSelector(state => state)
 
   return (
+
     <div className='pokedex__main'>
-      <header className='header'>
-      <img className='banner1' src="../img/image 11.png" alt="" />
-        <div className='halfHeader'>
-          <div className='logo1__container'>
-            <img className='pokeLogo1' src="../img/poke.png" alt="" />
-          </div>
-        </div>
-      </header>
-        
-    <p className='welcome__p'><span className='welcome'>Welcome {trainerName},</span> here you can find your favourite pokemon.</p>
-    <FormPoke urlBase={urlBase} setFormUrl={setFormUrl}/>
-    <PokeContainer formUrl={formUrl}/>
+      <Header />
+
+      <p className='welcome__p'><span className='welcome'>Welcome {trainerName},</span> here you can find your favourite pokemon.</p>
+      <FormPoke urlBase={urlBase} setFormUrl={setFormUrl} />
+      <PokeContainer formUrl={formUrl} />
     </div>
+
+
+
   )
 }
 

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import PokeIdPage from './PokeIdPage'
+import ErrorMessage from './ErrorMessage'
 
 const PokeInfo = () => {
 
@@ -21,7 +22,7 @@ const PokeInfo = () => {
       {
         hasError
         ?
-        <h1>This pokemon does not exist x</h1>
+        <ErrorMessage />
         
         : <>
         

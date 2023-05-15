@@ -1,0 +1,36 @@
+
+.loader__container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo__container {
+    width: 100px;
+    
+}
+
+.imgLogo {
+    width: 100%;
+    object-fit: contain;
+}
+
+.loading {
+    animation-duration: 5s;
+    animation-name: loading;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  @keyframes loading {
+    from {
+      rotate: 0deg;
+    }
+  
+    to {
+     
+     rotate: 360deg;
+   }
+  }

@@ -2,6 +2,8 @@ import React from 'react'
 import ProgressBar from "@ramonak/react-progress-bar";
 import './pokeIdPage.css'
 import { useNavigate } from 'react-router-dom';
+import Header from '../components/Header';
+import Loader from './Loader';
 
 
 const PokeIdPage = ({ pokemon }) => {
@@ -16,15 +18,17 @@ const PokeIdPage = ({ pokemon }) => {
 
     return (
         <>
+        {
 
-            <header className='header'>
-                <img onClick={handleClick} className='banner1 banner__click' src="../img/image 11.png" alt="" />
-                <div className='halfHeader'>
-                    <div className='logo1__container'>
-                        <img className='pokeLogo1' src="../img/poke.png" alt="" />
-                    </div>
-                </div>
-            </header>
+            !(pokemon)
+            ?
+            <Loader />
+
+            :
+
+            <>
+
+            <Header handleClick={handleClick}/>
 
 
             <div className="middle"></div>
@@ -141,6 +145,9 @@ const PokeIdPage = ({ pokemon }) => {
                     </ul>
                 </article>
             </div>
+
+            </>            
+        }
         </>
 
     )
